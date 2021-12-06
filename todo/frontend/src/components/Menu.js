@@ -1,10 +1,14 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 const Menu = () => {
     return (
         <div className="header">
-            <a className="active" href="#">Users</a>
-            <a href="#">Todo List</a>
+            <nav>
+                <Link to='/'>Users</Link>
+                <Link to='/projects'>Projects </Link>
+                <Link to='/todo'>ToDo list </Link>
+            </nav>
         </div>
     )
 }
